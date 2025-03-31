@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lâmpada lalala</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .lalala {
+            width: 500px;
+            height: 500px;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lalala" id="lampada"></div>
+
+    <script>
+        const lampada = document.getElementById("lampada");
+
+        lampada.addEventListener("mouseenter", () => {
+            lampada.style.backgroundImage = "url('https://cdn-icons-png.flaticon.com/512/702/702797.png')";
+        });
+
+        lampada.addEventListener("mouseleave", () => {
+            lampada.style.backgroundImage = "url('https://cdn-icons-png.flaticon.com/512/702/702814.png')";
+        });
+        
+    </script>
+</body>
+
+</html>
